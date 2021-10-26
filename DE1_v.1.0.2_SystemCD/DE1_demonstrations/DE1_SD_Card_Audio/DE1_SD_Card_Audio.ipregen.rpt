@@ -1,0 +1,78 @@
+IP Upgrade report for DE1_SD_Card_Audio
+Tue Oct 26 15:12:42 2021
+Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. IP Upgrade Summary
+  3. Failed Upgrade IP Components
+  4. IP Upgrade Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------+
+; IP Upgrade Summary                                                         ;
++------------------------------+---------------------------------------------+
+; IP Components Upgrade Status ; Failed - Tue Oct 26 15:12:42 2021           ;
+; Quartus Prime Version        ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
+; Revision Name                ; DE1_SD_Card_Audio                           ;
+; Top-level Entity Name        ; DE1_SD_Card_Audio                           ;
+; Family                       ; Cyclone V                                   ;
++------------------------------+---------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Failed Upgrade IP Components                                                                                                                           ;
++-------------+----------------+---------+----------------------+----------------------+-----------------+-----------------------------------------------+
+; Entity Name ; Component Name ; Version ; Original Source File ; Generation File Path ; New Source File ; Message                                       ;
++-------------+----------------+---------+----------------------+----------------------+-----------------+-----------------------------------------------+
+; Audio_PLL   ; ALTPLL         ; 11.1    ; v/Audio_PLL.qip      ; v/Audio_PLL.v        ;                 ; Error upgrading IP component "v/Audio_PLL.v". ;
+; SDRAM_PLL   ; ALTPLL         ; 11.1    ; v/SDRAM_PLL.qip      ; v/SDRAM_PLL.v        ;                 ; Error upgrading IP component "v/SDRAM_PLL.v". ;
++-------------+----------------+---------+----------------------+----------------------+-----------------+-----------------------------------------------+
+
+
++---------------------+
+; IP Upgrade Messages ;
++---------------------+
+Info (11902): Backing up file "v/Audio_PLL.v" to "v/Audio_PLL.BAK.v"
+Info (11837): Started upgrading IP component ALTPLL with file "v/Audio_PLL.v"
+Info (11904): Restoring file "v/Audio_PLL.BAK.v" to "v/Audio_PLL.v"
+Error (14921): Error upgrading IP component "v/Audio_PLL.v".
+Info (11902): Backing up file "v/SDRAM_PLL.v" to "v/SDRAM_PLL.BAK.v"
+Info (11837): Started upgrading IP component ALTPLL with file "v/SDRAM_PLL.v"
+Info (11904): Restoring file "v/SDRAM_PLL.BAK.v" to "v/SDRAM_PLL.v"
+Error (14921): Error upgrading IP component "v/SDRAM_PLL.v".
+Error (11133): IP component ALTPLL with file "v/Audio_PLL.v" upgrade failed
+Error (11889): IP component upgrade failed
+Error (11133): IP component ALTPLL with file "v/SDRAM_PLL.v" upgrade failed
+Error (11889): IP component upgrade failed
+Error (23031): Evaluation of Tcl script c:/intelfpga_lite/17.1/quartus/common/tcl/internal/ip_regen/ip_regen.tcl unsuccessful
+Error: Quartus Prime Shell was unsuccessful. 7 errors, 0 warnings
+    Error: Peak virtual memory: 4905 megabytes
+    Error: Processing ended: Tue Oct 26 15:12:43 2021
+    Error: Elapsed time: 00:00:11
+    Error: Total CPU time (on all processors): 00:00:17
+
+

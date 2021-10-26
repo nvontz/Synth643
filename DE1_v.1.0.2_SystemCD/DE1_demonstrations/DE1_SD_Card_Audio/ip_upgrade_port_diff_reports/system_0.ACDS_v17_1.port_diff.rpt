@@ -1,0 +1,35 @@
+IP Ports Diff Report for system_0
+Tue Oct 26 15:12:18 2021
+Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. IP Information
+  2. IP Ports Diff Table
+
+
+
++------------------------------------------------------+
+; IP Information                                       ;
++----------------------+-------------------------------+
+; IP Variation Name    ; system_0                      ;
+; Prior Version        ; ACDS_v11.1sp2                 ;
+; New Version          ; ACDS_v17.1                    ;
+; New File             ; system_0/synthesis/system_0.v ;
+; Has Port Differences ; Yes                           ;
++----------------------+-------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; IP Ports Diff Table                                                                                                                                       ;
++-------------+-------------------------------------------------------------+------------------+----------------+----------------------+--------------------+
+; Change Type ; Port Name                                                   ; Prior Port Range ; New Port Range ; Prior Port direction ; New Port direction ;
++-------------+-------------------------------------------------------------+------------------+----------------+----------------------+--------------------+
+; Modified    ; tri_state_bridge_0_bridge_0_out_select_n_to_the_cfi_flash_0 ; Scalar           ; [0:0]          ; output               ; output             ;
+; Modified    ; tri_state_bridge_0_bridge_0_out_tri_state_bridge_0_readn    ; Scalar           ; [0:0]          ; output               ; output             ;
+; Modified    ; tri_state_bridge_0_bridge_0_out_write_n_to_the_cfi_flash_0  ; Scalar           ; [0:0]          ; output               ; output             ;
++-------------+-------------------------------------------------------------+------------------+----------------+----------------------+--------------------+
+
+
