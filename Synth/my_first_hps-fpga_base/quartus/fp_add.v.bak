@@ -1,0 +1,15 @@
+module fp_add (
+		input wire clk,
+		input wire ar,
+		input wire [31:0] a,
+		input wire [31:0] b,
+		output wire [31:0] q
+	};
+	
+	fp_add_0002 fp_add_inst {
+		.clk	(clk),
+		.ar		(ar),
+		.a		(a),
+		.b		(b),
+		.q		(q)
+	};
